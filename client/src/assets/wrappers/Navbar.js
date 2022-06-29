@@ -16,6 +16,7 @@ const Wrapper = styled.nav`
     width: 90vw;
     align-items: center;
     justify-content: space-between;
+    
   }
   .toggle-btn {
     background: transparent;
@@ -43,6 +44,7 @@ const Wrapper = styled.nav`
     position: absolute;
     top: 40px;
     left: 0;
+    color: #134F8A;
     width: 100%;
     background: var(--primary-100);
     box-shadow: var(--shadow-2);
@@ -65,6 +67,8 @@ const Wrapper = styled.nav`
   .logo-text {
     display: none;
     margin: 0;
+    font-weight: bold;
+    color: #134F8A;
   }
   @media (min-width: 992px) {
     position: sticky;

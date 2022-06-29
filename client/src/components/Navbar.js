@@ -7,14 +7,14 @@ const Navbar = () => {
   const [showLogout, setShowLogout] = useState(false)
   const { toggleSidebar, logoutUser, user } = useAppContext()
   return (
-    <Wrapper>
+    <Wrapper className='nav-dash'>
       <div className='nav-center'>
         <button type='button' className='toggle-btn' onClick={toggleSidebar}>
           <FaAlignLeft />
         </button>
         <div>
           <Logo />
-          <h3 className='logo-text'>dashboard</h3>
+          <h3 className='logo-text'>Dashboard</h3>
         </div>
         <div className='btn-container'>
           <button

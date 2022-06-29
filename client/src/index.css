@@ -18,7 +18,7 @@ html {
   --primary-200: #87eaf2;
   --primary-300: #54d1db;
   --primary-400: #38bec9;
-  --primary-500: #2cb1bc;
+  --primary-500: #C3BEF7;
   --primary-600: #14919b;
   --primary-700: #0e7c86;
   --primary-800: #0a6c74;
@@ -70,7 +70,7 @@ html {
 }
 
 body {
-  background: var(--backgroundColor);
+  background: #E5ECF4;
   font-family: var(--bodyFont);
   font-weight: 400;
   line-height: 1.75;
@@ -147,7 +147,7 @@ ul {
 
 .btn {
   cursor: pointer;
-  color: var(--white);
+  color: #340b85;
   background: var(--primary-500);
   border: transparent;
   border-radius: var(--borderRadius);

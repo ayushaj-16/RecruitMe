@@ -12,6 +12,8 @@ const Wrapper = styled.aside`
       width: 250px;
       margin-left: -250px;
       transition: var(--transition);
+      background: rgb(239,255,250);
+background: linear-gradient(180deg, rgba(239,255,250,1) 12%, rgba(195,190,247,1) 54%, rgba(138,79,255,1) 85%);
     }
     .content {
       position: sticky;
@@ -34,7 +36,7 @@ const Wrapper = styled.aside`
     .nav-link {
       display: flex;
       align-items: center;
-      color: var(--grey-500);
+      color: #38598b;
       padding: 1rem 0;
       padding-left: 2.5rem;
       text-transform: capitalize;
@@ -43,23 +45,28 @@ const Wrapper = styled.aside`
     .nav-link:hover {
       background: var(--grey-50);
       padding-left: 3rem;
-      color: var(--grey-900);
+      color: #113f67;
+      font-weight: bold;
     }
     .nav-link:hover .icon {
-      color: var(--primary-500);
+      color: #113f67;
+      font-weight: bold;
     }
     .icon {
       font-size: 1.5rem;
       margin-right: 1rem;
       display: grid;
+      font-weight: bold;
       place-items: center;
       transition: var(--transition);
     }
     .active {
-      color: var(--grey-900);
+      color: #113f67;
+      font-weight: bolder;
     }
     .active .icon {
-      color: var(--primary-500);
+      color: #113f67;
+      font-weight: bolder;
     }
   }
 `
