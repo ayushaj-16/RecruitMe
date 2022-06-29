@@ -44,7 +44,7 @@
   position: absolute;
   top: 33vh;
   padding: 1.5rem 4.5em;
-  left: 33vw;
+  left: 40vw;
   width: 20em;
   box-shadow: #0099ff 0 0 30px -1px;
   border-radius: 3%;
@@ -55,12 +55,15 @@
 .land_btn {
   background:#14919b;
 }
+.land_btn:hover {
+  background:var(--primary-800);
+}
 
 @media (max-width: 1500px) {
   .homepage_div {
     width: 33%;
     top: 33vh;
-    left: 29vw;
+    left: 31vw;
   }
 }
 
