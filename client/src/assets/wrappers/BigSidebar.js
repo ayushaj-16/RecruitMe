@@ -12,8 +12,6 @@ const Wrapper = styled.aside`
       width: 250px;
       margin-left: -250px;
       transition: var(--transition);
-      background: rgb(239,255,250);
-background: linear-gradient(180deg, rgba(239,255,250,1) 12%, rgba(195,190,247,1) 54%, rgba(138,79,255,1) 85%);
     }
     .content {
       position: sticky;
@@ -36,7 +34,7 @@ background: linear-gradient(180deg, rgba(239,255,250,1) 12%, rgba(195,190,247,1)
     .nav-link {
       display: flex;
       align-items: center;
-      color: #38598b;
+      color: var(--grey-500);
       padding: 1rem 0;
       padding-left: 2.5rem;
       text-transform: capitalize;
@@ -45,28 +43,23 @@ background: linear-gradient(180deg, rgba(239,255,250,1) 12%, rgba(195,190,247,1)
     .nav-link:hover {
       background: var(--grey-50);
       padding-left: 3rem;
-      color: #113f67;
-      font-weight: bold;
+      color: var(--grey-900);
     }
     .nav-link:hover .icon {
-      color: #113f67;
-      font-weight: bold;
+      color: var(--primary-500);
     }
     .icon {
       font-size: 1.5rem;
       margin-right: 1rem;
       display: grid;
-      font-weight: bold;
       place-items: center;
       transition: var(--transition);
     }
     .active {
-      color: #113f67;
-      font-weight: bolder;
+      color: var(--grey-900);
     }
     .active .icon {
-      color: #113f67;
-      font-weight: bolder;
+      color: var(--primary-500);
     }
   }
 `
