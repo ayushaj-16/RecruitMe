@@ -1,0 +1,162 @@
+.wall{
+  background: url("https://i.ibb.co/9Y6dkNf/back.jpg");
+  background-size: cover;
+}
+
+.tunnel {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: black;
+}
+
+.scene{
+  display: inline-block;
+  vertical-align: middle;
+  perspective: 5px;
+  perspective-origin: 50% 50%;
+  opacity: 0.4;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+}
+
+.wrap{
+  position: absolute;
+  width: 1000px;
+  height: 1000px;
+  left: -500px;
+  top: -500px;
+  transform-style: preserve-3d;
+  animation: move 12s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-animation: move 12s infinite linear;
+}
+
+.wrap:nth-child(2){
+  animation: move 12s infinite linear;
+  animation-delay: 6s;
+  -webkit-animation: move 12s infinite linear;
+}
+
+.homepage_div {
+  background: rgba(113, 213, 215, 0.85);
+  position: absolute;
+  top: 33vh;
+  padding: 1.5rem 4.5em;
+  left: 33vw;
+  width: 20em;
+  box-shadow: #0099ff 0 0 30px -1px;
+  border-radius: 3%;
+  display: flex;
+  justify-content: center;
+}
+
+.land_btn {
+  background:#14919b;
+}
+
+@media (max-width: 1500px) {
+  .homepage_div {
+    width: 33%;
+    top: 33vh;
+    left: 29vw;
+  }
+}
+
+@media (max-width: 1100px) {
+  .homepage_div {
+    width: 35%;
+    left: 28vw;
+    top: 36vh;
+  }
+}
+
+@media (max-width: 900px) {
+  .homepage_div {
+    width: 44%;
+    left: 28vw;
+    top: 39vh;
+  }
+}
+
+@media (max-width: 720px) {
+  .homepage_div {
+    width: 50%;
+    left: 25vw;
+    top: 39vh;
+  }
+}
+
+@media (max-width: 576px) {
+  .homepage_div {
+    width: 57%;
+    left: 20vw;
+    top: 42vh;
+  }
+}
+
+@media (max-width: 460px) {
+  .homepage_div {
+    width: 72%;
+    left: 11vw;
+    top: 42vh;
+  }
+}
+.wall {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  animation: fade 12s infinite linear;
+  animation-delay: 0;
+  -webkit-animation: fade 12s infinite linear;
+}
+
+.wrap:nth-child(2) .wall {
+  animation-delay: 6s;
+}
+
+.wall-right {
+  transform: rotateY(90deg) translateZ(500px);
+}
+
+.wall-left {
+  transform: rotateY(-90deg) translateZ(500px);
+}
+
+.wall-top {
+  transform: rotateX(90deg) translateZ(500px);
+}
+
+.wall-bottom {
+  transform: rotateX(-90deg) translateZ(500px);
+}
+
+.wall-back {
+  transform: rotateX(180deg) translateZ(500px);
+}
+
+@keyframes move {
+  0%{
+    transform: translateZ(-500px) rotate(0deg);
+  }
+  100%{
+    transform: translateZ(500px) rotate(0deg);
+  }
+}
+
+@keyframes fade {
+  0%{
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
