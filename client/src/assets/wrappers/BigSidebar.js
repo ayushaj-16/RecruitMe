@@ -13,7 +13,7 @@ const Wrapper = styled.aside`
       margin-left: -250px;
       transition: var(--transition);
       background: rgb(239,255,250);
-background: linear-gradient(180deg, rgba(239,255,250,1) 12%, rgba(195,190,247,1) 54%, rgba(138,79,255,1) 85%);
+      background: linear-gradient(180deg, rgba(239,255,250,1) 12%, rgba(195,190,247,1) 54%, rgba(138,79,255,1) 85%);
     }
     .content {
       position: sticky;
